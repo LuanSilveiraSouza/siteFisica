@@ -1,3 +1,12 @@
+body{
+    background-image: linear-gradient(to bottom, rgb(0, 61, 77), white);
+    font-family: 'Roboto', sans-serif;
+}
+
+.bg-blue {
+    background-color: rgb(0, 163, 204);
+}
+
 .navbar {
     min-height: 50px;
 
@@ -11,4 +20,19 @@
 
 .borda {
     border: red solid 1px;
+}
+
+hr{
+    border: none;
+    height: 2px;
+    color: #333;
+    background-color: #333;
+}
+
+.nav-item:hover {
+    background-color: white;
+}
+
+.nav-item:hover.nav-menu {
+    background-color: rgb(0, 163, 204);
 }

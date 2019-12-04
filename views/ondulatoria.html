@@ -1,4 +1,5 @@
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -6,55 +7,79 @@
 
     <link rel="stylesheet" href="/public/css/bootstrap-4.0.0/dist/css/bootstrap.min.css">
     <link rel="stylesheet" href="/public/css/main.css">
+    <link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet">
     <title>Ondulatória</title>
 </head>
-<body>
-    <nav class="navbar navbar-lg navbar-expand-lg navbar-light bg-info">
-        <a class="navbar-brand text-lg mr-5" href="#">Física Online</a>
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#conteudoNavbarSuportado" aria-controls="conteudoNavbarSuportado" aria-expanded="false" aria-label="Alterna navegação">
-            <span class="navbar-toggler-icon"></span>
-        </button>
 
-        <div class="collapse navbar-collapse" id="conteudoNavbarSuportado">
+<body>
+    <nav class="navbar navbar-lg navbar-expand-lg navbar-light fixed-top bg-blue">
+        <a class="navbar-brand text-lg mr-5" href="#">Física Online</a>
+        <div class="collapse navbar-collapse">
             <ul class="navbar-nav mr-auto">
-            <li class="nav-item active">
-                <a class="nav-link" href="menu.html">Home<span class="sr-only">(página atual)</span></a>
-            </li>
-            <li class="nav-item active">
-                <a class="nav-link" href="ondulatoria.html">Ondulatória</a>
-            </li>
-            <li class="nav-item active">
-                <a class="nav-link" href="optica.html">Óptica</a>
-            </li>
-            <li class="nav-item active">
-                <a class="nav-link" href="fisicaModerna.html">Física Moderna</a>
-            </li>            
+                <li class="nav-item active border-bottom mx-2 rounded-top">
+                    <a class="nav-link" href="menu.html">Home</a>
+                </li>
+                <li class="nav-item active border-bottom mx-2 rounded-top">
+                    <a class="nav-link" href="ondulatoria.html">Ondulatória</a>
+                </li>
+                <li class="nav-item active border-bottom mx-2 rounded-top">
+                    <a class="nav-link" href="optica.html">Óptica</a>
+                </li>
+                <li class="nav-item active border-bottom mx-2 rounded-top">
+                    <a class="nav-link" href="fisicaModerna.html">Física Moderna</a>
+                </li>
             </ul>
             <form class="form-inline my-2 my-lg-0">
-            <input class="form-control mr-sm-2" type="search" placeholder="Pesquisar" aria-label="Pesquisar">
-            <button class="btn btn-outline-light my-2 my-sm-0" type="submit">Pesquisar</button>
+                <input class="form-control mr-sm-2" type="search" placeholder="Pesquisar" aria-label="Pesquisar">
+                <button class="btn btn-outline-light my-2 my-sm-0" type="submit">Pesquisar</button>
             </form>
         </div>
     </nav>
 
+    <div class="py-5"></div>
+
     <div class="d-flex justify-content-center">
-        <div class="my-3 w-75">
+        <div class="my-3 bg-white px-5 pt-3" style="width: 80%;">
             <div class="container-fluid bg-dark rounded">
                 <div class="container d-flex justify-content-center">
-                    <h1 class="display-2 text-light">Física Online</h1>
+                    <h1 class="display-2 text-light"><strong>Física Online</strong></h1>
                 </div>
                 <div class="container d-flex justify-content-center">
                     <h1 class="display-4 text-light">Ondulatória</h1>
                 </div>
             </div>
+
+            <div class="container my-2">
+                <nav class="navbar bg-transparent navbar-expand-lg">
+                    <ul class="navbar-nav mr-auto mx-auto text-center">
+                        <li class="nav-item active mx-2 rounded nav-menu">
+                            <a class="nav-link text-dark" href="#caracteristicas">Características das Ondas</a>
+                        </li>
+                        <li class="nav-item active mx-2 rounded nav-menu">
+                            <a class="nav-link text-dark" href="#vibracao">Direção de Vibração</a>
+                        </li>
+                        <li class="nav-item active mx-2 rounded nav-menu">
+                            <a class="nav-link text-dark" href="#propagacao">Direção de Propagação</a>
+                        </li>
+                        <li class="nav-item active mx-2 rounded nav-menu">
+                            <a class="nav-link text-dark" href="#natureza">Natureza das Ondas</a>
+                        </li>
+                        <li class="nav-item active mx-2 rounded nav-menu">
+                            <a class="nav-link text-dark" href="#fenomenos">Fenômenos Ondulatórios</a>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+
             <div class="row pt-3">
                 <div class="col-2"></div>
                 <div class="col-8">
                     <p class="display-4 text-center">Introdução</p>
-                    <p class="text-justify">Ondulatória é a porção da física que estuda as ondas, suas características e propriedades. 
-                        Do ponto de vista científico, ondas são perturbações/vibrações que percorrem por um meio, 
-                        transportando energia conforme se movimentam. Todas as ondas são originadas de uma fonte, 
-                        que é um objeto ou meio capaz de criar ondas, e estas apenas transferem a energia cinética 
+                    <p class="text-justify">Ondulatória é a porção da física que estuda as ondas, suas características e
+                        propriedades.
+                        Do ponto de vista científico, ondas são perturbações/vibrações que percorrem por um meio,
+                        transportando energia conforme se movimentam. Todas as ondas são originadas de uma fonte,
+                        que é um objeto ou meio capaz de criar ondas, e estas apenas transferem a energia cinética
                         originárias da fonte.</p>
                 </div>
                 <div class="col-2"></div>
@@ -63,51 +88,59 @@
             <hr>
 
             <div class="container-fluid">
-                <p class="display-4 text-center">Características das Ondas</p>
+                <p class="display-4 text-center" id="caracteristicas">Características das Ondas</p>
             </div>
             <div class="row pt-3">
                 <div class="col-6">
                     <p class="text-center display-4">Frequência</p>
-                    <p class="text-justify">Representa o número de oscilações da onda em um determinado 
-                        intervalo de tempo. O valor da frequência não depende da onda em si, mas sim da 
-                        frequência com qual a fonte produz novas oscilações. A frequência é representada pela 
+                    <p class="text-justify">Representa o número de oscilações da onda em um determinado
+                        intervalo de tempo. O valor da frequência não depende da onda em si, mas sim da
+                        frequência com qual a fonte produz novas oscilações. A frequência é representada pela
                         letra f e é comumente medida em Hertz (Hz).</p>
                 </div>
                 <div class="col-6">
                     <p class="text-center display-4">Período</p>
-                    <p class="text-justify">Representa o tempo necessário para a onda criar uma nova oscilação. 
+                    <p class="text-justify">Representa o tempo necessário para a onda criar uma nova oscilação.
                         Utiliza-se a letra T e é medido em segundos.</p>
                 </div>
             </div>
 
             <p class="display-4 text-center">Relação Período-Frequência</p>
             <div class="container-fluid d-flex justify-content-center">
-                <img src="/public/img/frequencia-periodo.gif" alt="relacao frequencia-periodo" class="w-50">
+                <img src="/public/img/ondulatoria/frequencia-periodo.gif" alt="relacao frequencia-periodo" class="w-50">
             </div>
+
+            <div class="py-3"></div>
 
             <div class="row pt-3">
                 <div class="col-6">
                     <p class="text-center display-4">Crista</p>
                     <p class="text-center">Parte mais alta que a onda atinge.</p>
 
+                    <div class="py-3"></div>
+
                     <p class="text-center display-4">Comprimento de Onda</p>
                     <p class="text-center">Tamanho das oscilações da onda. Pode ser identificado medindo a distância
-                         entre duas cristas ou dois vales adjacentes e é representada pela letra grega lambda (λ).</p>
+                        entre duas cristas ou dois vales adjacentes e é representada pela letra grega lambda (λ).</p>
 
                 </div>
                 <div class="col-6">
                     <p class="text-center display-4">Vale</p>
                     <p class="text-center">Parte mais baixa que a onda atinge.</p>
 
+                    <div class="py-3"></div>
+
                     <p class="text-center display-4">Amplitude</p>
-                    <p class="text-center">Distância entre um vale, a parte mais baixa, e uma crista, 
+                    <p class="text-center">Distância entre um vale, a parte mais baixa, e uma crista,
                         a parte mais alta, caracterizando a altura da onda.</p>
                 </div>
             </div>
 
             <div class="container-fluid d-flex justify-content-center">
-                <img src="/public/img/esquema-onda.gif" alt="esquema de uma onda" class="w-50">
+                <img src="/public/img/ondulatoria/esquema-onda.gif" alt="esquema de uma onda" class="w-50">
             </div>
+
+            <div class="py-3"></div>
 
             <div class="row pt-3">
                 <div class="col-6">
@@ -115,39 +148,172 @@
                     <p class="text-center">Velocidade v que uma onda leva para propagar-se.</p>
                 </div>
                 <div class="col-6">
-                    <img src="/public/img/onda-velocidade.jpg" alt="velocidade de uma onda" class="w-75">
+                    <img src="/public/img/ondulatoria/onda-velocidade.jpg" alt="velocidade de uma onda" class="w-75">
                 </div>
             </div>
-            
+
             <hr>
 
-            <p class="display-4 text-center">Direção de Vibração</p>
+            <p class="display-4 text-center" id="vibracao">Direção de Vibração</p>
             <div class="row pt-3">
                 <div class="col-6">
                     <p class="text-center display-4">Ondas Transversais</p>
-                    <p class="text-justify">A onda está propagando-se da esquerda para a direita, na horizontal, 
-                        mas qualquer ponto da corda move-se para cima e para baixo, na vertical. 
-                        Como a direção de propagação da onda é perpendicular, ou seja, forma um ângulo de 90º 
+                    <p class="text-justify">A onda está propagando-se da esquerda para a direita, na horizontal,
+                        mas qualquer ponto da corda move-se para cima e para baixo, na vertical.
+                        Como a direção de propagação da onda é perpendicular, ou seja, forma um ângulo de 90º
                         com a direção de oscilação de qualquer ponto sobre a corda, dizemos que ela é transversal.</p>
 
-                    <img src="/public/img/onda-transversal.jpg" alt="onda-transversal" class="w-100">
+                    <img src="/public/img/ondulatoria/onda-transversal.jpg" alt="onda-transversal" class="w-100">
                 </div>
                 <div class="col-6">
                     <p class="text-center display-4">Ondas Longitudinais</p>
-                    <p class="text-justify">A onda longitudinal move-se na mesma direção de oscilação dos corpos 
-                        que estejam em seu caminho. Para exemplificar este tipo de onda, consideremos agora uma 
-                        pessoa falando ou um auto-falante emitindo um determinado som. O som da voz da pessoa se 
-                        propaga no espaço em todas as direções, afastando-se da fonte. O som, transmitindo-se no 
-                        ar, produz compressões e rarefações. De acordo com a sequência sonora emitida pela pessoa, 
-                        podemos ter camadas de ar mais comprimidas ou menos comprimidas, conforme está representado 
-                        na figura como regiões claras e regiões escuras. A distância entre uma região clara e outra 
+                    <p class="text-justify">A onda longitudinal move-se na mesma direção de oscilação dos corpos
+                        que estejam em seu caminho. Para exemplificar este tipo de onda, consideremos agora uma
+                        pessoa falando ou um auto-falante emitindo um determinado som. O som da voz da pessoa se
+                        propaga no espaço em todas as direções, afastando-se da fonte. O som, transmitindo-se no
+                        ar, produz compressões e rarefações. De acordo com a sequência sonora emitida pela pessoa,
+                        podemos ter camadas de ar mais comprimidas ou menos comprimidas, conforme está representado
+                        na figura como regiões claras e regiões escuras. A distância entre uma região clara e outra
                         escura representa meio comprimento de onda (λ/2).</p>
 
-                    <img src="/public/img/onda-longitudinal.jpg" alt="onda-transversal" class="w-100">
+                    <img src="/public/img/ondulatoria/onda-longitudinal.jpg" alt="onda-transversal" class="w-100">
+                </div>
+            </div>
+
+            <hr>
+
+            <p class="display-4 text-center" id="propagacao">Direção de Propagação</p>
+            <div class="row pt-3">
+                <div class="col-4">
+                    <h1 class="text-center">Unidimensionais</h1>
+                    <p class="text-justify">Propagam-se em apenas uma direção. Ex: Onda de uma corda.</p>
+
+                    <img src="/public/img/ondulatoria/unidimensional.jpg" alt="onda-transversal" class="w-100">
+                </div>
+                <div class="col-4">
+                    <h1 class="text-center">Bidimensionais</h1>
+                    <p class="text-justify">Propagam-se em até duas direções. Ex: Onda provocada pela queda de
+                        algum material na água.</p>
+
+                    <img src="/public/img/ondulatoria/bidimensional.jpg" alt="onda-transversal" class="w-100">
+                </div>
+                <div class="col-4">
+                    <h1 class="text-center">Tridimensionais</h1>
+                    <p class="text-justify">Propagam-se em todas as direções. Ex: Ondas sonoras.</p>
+
+                    <img src="/public/img/ondulatoria/tridimensional.png" alt="onda-transversal" class="w-100">
+                </div>
+            </div>
+
+            <hr>
+
+            <p class="display-4 text-center" id="natureza">Natureza das Ondas</p>
+            <p class="text-center display-4">Ondas Mecânicas</p>
+            <p class="text-justify">Ondas Mecânicas transportam energia cinética e potencial e necessitam de
+                um meio material para se propagar. Um meio material é um ambiente constituído de matéria,
+                como a água, o ar, o solo, entre outros.</p>
+            <div class="d-flex justify-content-center">
+                <img src="/public/img/ondulatoria/mecanica.png" alt="onda mecanica" class="w-100">
+            </div>
+
+            <div class="py-3"></div>
+
+            <p class="text-center display-4">Ondas Eletromagnéticas</p>
+            <p class="text-justify">Ondas eletromagnéticas são originadas pela liberação de energia de
+                duas fontes distintas: uma fonte elétrica e uma magnética. Devido isso, elas não necessitam
+                de um meio material para se propagar, podendo ser transmitidas pelo vácuo. Quando um campo
+                elétrico e um magnético emitem energia em conjunto, esta energia apresenta o aspecto de uma
+                onda dupla, onde ambas seguem no mesmo sentido e direção porém perpendicularmente entre si
+                e entre a fonte. Portanto, toda onda eletromagnética é transversal.</p>
+            <div class="d-flex justify-content-center">
+                <img src="/public/img/ondulatoria/eletromagneticas.png" alt="onda mecanica" class="w-100">
+            </div>
+            <p class="text-center display-4">Espectro Eletromagnético</p>
+            <p class="text-justify">Ondas eletromagnéticas são originadas pela liberação de energia de
+                duas fontes distintas: uma fonte elétrica e uma magnética. Devido isso, elas não necessitam
+                de um meio material para se propagar, podendo ser transmitidas pelo vácuo. Quando um campo
+                elétrico e um magnético emitem energia em conjunto, esta energia apresenta o aspecto de uma
+                onda dupla, onde ambas seguem no mesmo sentido e direção porém perpendicularmente entre si
+                e entre a fonte. Portanto, toda onda eletromagnética é transversal.</p>
+            <div class="d-flex justify-content-center">
+                <img src="/public/img/ondulatoria/espectro.png" alt="onda mecanica" class="w-75">
+            </div>
+
+            <hr>
+
+            <p class="display-4 text-center" id="fenomenos">Fenômenos Ondulatórios</p>
+            <div class="row pt-3">
+                <div class="col-6">
+                    <p class="text-center display-4">Reflexão</p>
+                    <p class="text-justify">Ocorre quando uma onda vai de encontro a algum objeto capaz de a refletir,
+                        ou seja, a onda inverte o sentido de propagação, voltando para onde veio. Ocorre tanto com
+                        ondas mecânicas (Ex: Som quando encontra um obstáculo) quanto com ondas eletromagnéticas
+                        (Ex: Luz quando encontra um espelho).</p>
+
+                    <img src="/public/img/ondulatoria/reflexao.jpg" alt="reflexao" class="w-100">
+                </div>
+                <div class="col-6">
+                    <p class="text-center display-4">Refração</p>
+                    <p class="text-justify">Ocorre quando uma onda atravessa os limites entre dois meios de propagação,
+                        alterando de meio no processo. Um exemplo clássico é a luz do sol, que quando entra na
+                        atmosfera se movimenta no ar (meio material) e quando entra num corpo aquático muda
+                        de meio de propagação. Quando há refração, a velocidade e o comprimento da onda são alterados
+                        na passagem de um meio para outro, mantendo apenas a frequência igual.</p>
+
+                    <img src="/public/img/ondulatoria/refracao.jpg" alt="refracao" class="w-100">
+                </div>
+            </div>
+
+            <div class="py-4"></div>
+
+            <div class="row pt-3">
+                <div class="col-6">
+                    <p class="text-center display-4">Difração</p>
+                    <p class="text-justify">A difração de ondas é a aplicação de uma das características das mesmas:
+                        ondas conseguem
+                        contornar obstáculos. Por exemplo, uma onda sonora que bate numa parede maciça é espelhada para
+                        o outro lado.
+                        Mesmo que perca intensidade no processo, é possível escutar o som através da parede graças a
+                        difração sofrida
+                        pela onda.</p>
+
+                    <img src="/public/img/ondulatoria/difracao.jpg" alt="difracao" class="w-100">
+                </div>
+                <div class="col-6">
+                    <p class="text-center display-4">Ressonância</p>
+                    <p class="text-justify">A ressonância ocorre quando a frequência de determinada fonte de ondas
+                        se torna igual à frequência de um corpo. Quando as ondas se encontram com o corpo de mesma
+                        frequência, este objeto absorve a energia armazenada nas ondas. A partir da ressonância é
+                        possível quebrar uma taça de vidro apenas com o grito, basta conseguir ondas sonoras da
+                        mesma frequência do vidro, assim fazendo este absorver a energia e explodir.</p>
+
+                    <img src="/public/img/ondulatoria/ressonancia.jpg" alt="ressonancia" class="w-100">
+                </div>
+            </div>
+
+            <div class="py-4"></div>
+
+            <div class="row pt-3">
+                <div class="col-6">
+                    <p class="text-center display-4">Interferência</p>
+                    <p class="text-justify">Alguns tipos de ondas, como o som, podem se sobrepor. Quando duas ondas
+                        distintas se encontram, há uma interferência entre elas, o que pode ocasionar a soma de suas
+                        intensidades (quando há o encontro de duas cristas ou dois vales) ou a anulação de suas
+                        intensidades (quando há o encontro de um vale e uma crista).</p>
+
+                    <img src="/public/img/ondulatoria/interferencia.png" alt="interferencia" class="w-100">
+                </div>
+                <div class="col-6">
+                    <p class="text-center display-4">Efeito Doppler</p>
+                    <p class="text-justify">É a aparente mudança na frequência de uma fonte em movimento em relação à um
+                        referencial parado.</p>
+
+                    <img src="/public/img/ondulatoria/doppler.jpg" alt="doppler" class="w-100">
                 </div>
             </div>
 
         </div>
     </div>
 </body>
+
 </html>

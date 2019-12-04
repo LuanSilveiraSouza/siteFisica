@@ -1,4 +1,5 @@
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -8,38 +9,237 @@
     <link rel="stylesheet" href="/public/css/main.css">
     <title>Física Moderna</title>
 </head>
-<body>
-    <nav class="navbar navbar-lg navbar-expand-lg navbar-light bg-primary">
-        <a class="navbar-brand text-lg mr-5" href="#">Física Online</a>
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#conteudoNavbarSuportado" aria-controls="conteudoNavbarSuportado" aria-expanded="false" aria-label="Alterna navegação">
-            <span class="navbar-toggler-icon"></span>
-        </button>
 
-        <div class="collapse navbar-collapse" id="conteudoNavbarSuportado">
+<body>
+    <nav class="navbar navbar-lg navbar-expand-lg navbar-light fixed-top bg-blue">
+        <a class="navbar-brand text-lg mr-5" href="#">Física Online</a>
+        <div class="collapse navbar-collapse">
             <ul class="navbar-nav mr-auto">
-            <li class="nav-item active">
-                <a class="nav-link" href="menu.html">Home<span class="sr-only">(página atual)</span></a>
-            </li>
-            <li class="nav-item active">
-                <a class="nav-link" href="ondulatoria.html">Ondulatória</a>
-            </li>
-            <li class="nav-item active">
-                <a class="nav-link" href="optica.html">Óptica</a>
-            </li>
-            <li class="nav-item active">
-                <a class="nav-link" href="fisicaModerna.html">Física Moderna</a>
-            </li>            
+                <li class="nav-item active border-bottom mx-2 rounded-top">
+                    <a class="nav-link" href="menu.html">Home</a>
+                </li>
+                <li class="nav-item active border-bottom mx-2 rounded-top">
+                    <a class="nav-link" href="ondulatoria.html">Ondulatória</a>
+                </li>
+                <li class="nav-item active border-bottom mx-2 rounded-top">
+                    <a class="nav-link" href="optica.html">Óptica</a>
+                </li>
+                <li class="nav-item active border-bottom mx-2 rounded-top">
+                    <a class="nav-link" href="fisicaModerna.html">Física Moderna</a>
+                </li>
             </ul>
             <form class="form-inline my-2 my-lg-0">
-            <input class="form-control mr-sm-2" type="search" placeholder="Pesquisar" aria-label="Pesquisar">
-            <button class="btn btn-outline-light my-2 my-sm-0" type="submit">Pesquisar</button>
+                <input class="form-control mr-sm-2" type="search" placeholder="Pesquisar" aria-label="Pesquisar">
+                <button class="btn btn-outline-light my-2 my-sm-0" type="submit">Pesquisar</button>
             </form>
         </div>
     </nav>
 
+    <div class="py-5"></div>
+
+    <div class="d-flex justify-content-center">
+        <div class="my-3 bg-white px-5 pt-3" style="width: 80%;">
+            <div class="container-fluid bg-dark rounded">
+                <div class="container d-flex justify-content-center">
+                    <h1 class="display-2 text-light"><strong>Física Online</strong></h1>
+                </div>
+                <div class="container d-flex justify-content-center">
+                    <h1 class="display-4 text-light">Física Moderna</h1>
+                </div>
+            </div>
+
+            <div class="container my-2">
+                <nav class="navbar bg-transparent navbar-expand-lg">
+                    <ul class="navbar-nav mr-auto mx-auto text-center">
+                        <li class="nav-item active mx-2 rounded nav-menu">
+                            <a class="nav-link text-dark" href="#relatividade">Relatividade</a>
+                        </li>
+                        <li class="nav-item active mx-2 rounded nav-menu">
+                            <a class="nav-link text-dark" href="#quantica">Física Quântica</a>
+                        </li>
+                        <li class="nav-item active mx-2 rounded nav-menu">
+                            <a class="nav-link text-dark" href="#nuclear">Física Nuclear</a>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+
+            <div class="row pt-3">
+                <div class="col-2"></div>
+                <div class="col-8">
+                    <p class="display-4 text-center">Introdução</p>
+                    <p class="text-justify">Desvendamento e entendimento da estrutura elementar da matéria e a
+                        descoberta da energia armazenada no núcleo do átomo. A reformulação conceitual e a origem de uma
+                        nova física.</p>
+                </div>
+                <div class="col-2"></div>
+            </div>
+
+            <hr>
+
+            <div class="container-fluid">
+                <p class="display-4 text-center" id="relatividade">Relatividade</p>
+            </div>
+            <div class="row pt-3">
+                <div class="col-6">
+                    <p class="display-4 text-center">Teoria da Relatividade</p>
+                    <p class="text-center">A teoria da relatividade é dividida em duas etapas:</p>
+                    <p class="text-justify">1º: Trata do movimento uniforme, é a teoria da relatividade especial.
+                        <br><br>2º: Trata do movimento acelerado e da gravitação, é a teoria da relatividade geral.
+                    </p>
+                </div>
+                <div class="col-6">
+                    <p class="display-4 text-center">Postulados de Eistein</p>
+                    <p class="text-center">Há dois postulados de Einstein: </p>
+                    <p class="text-justify">1º – Princípio da Relatividade
+                        <br>“As leis da física são as mesmas em todos os referenciais inerciais de referência.”
+                        <br><br>2º – A Constância da Velocidade da Luz no Vácuo
+                        <br>“A velocidade da luz no vácuo tem o mesmo valor c em todos os referenciais inerciais de
+                        referência.”
+                    </p>
+                </div>
+            </div>
+            <div class="row pt-3">
+                <div class="col-6">
+                    <p class="display-4 text-center">Teoria da Relatividade Geral</p>
+                    <p class="text-justify">A teoria da relatividade é considerada uma das mais importantes
+                        contribuições da ciência. Basicamente ela disserta sobre como o tempo e o espaço são relativos
+                        de acordo com o ponto de vista do observador.</p>
+                    <p class="text-justify">Einstein tinha algumas ideias que proporcionaram uma revolução da forma que
+                        se entende o tempo e o espaço.</p>
+                    <p class="text-justify">Teoria da relatividade restrita:
+                        <br>Afirma que a energia de um corpo é sua massa vezes a velocidade da luz ao quadrado.
+                    </p>
+                    <p class="text-center display-4">e = m c²</p>
+                </div>
+                <div class="col-6">
+                    <div class="container d-flex justify-content-center mt-5 pt-5">
+                        <img src="/public/img/fisica-moderna/relatividade.jpg" alt="relatividade geral">
+                    </div>
+                </div>
+            </div>
+
+            <hr>
+
+            <div class="row pt-3" id="quantica">
+                <div class="col-2"></div>
+                <div class="col-8">
+                    <p class="display-4 text-center">Física Quântica</p>
+                    <p class="text-justify">Max Planck foi o pai da física quântica, ele criou uma das mais importantes
+                        constantes: 6,63 . 10-34 J.s, é usada para indicar a energia e a frequência das radiações
+                        eletromagnéticas. Ela determina a energia de um fóton, através da equação:</p>
+                    <p class="text-center display-4">E = h . v</p>
+                    <p class="text-justify">Einstein também é um dos principais físicos na área da física quântica, com
+                        sua teoria que envolve massa e energia e a famosa equação e = m c².</p>
+                    <p class="text-justify">Rutherford é relacionado com a radioatividade e a descoberta dos raios gama
+                        e beta. Além disso ele criou um modelo de átomo, (identificando o núcleo, prótons e elétrons).
+                    </p>
+                    <p class="text-justify">Bohr foi quem percebeu que faltava algumas informações no sistema de
+                        Rutherford. Segundo Bohr, quando a eletricidade passa através do átomo, o elétron pula para a
+                        órbita maior e seguinte, voltando depois à sua órbita usual. Assim, criando o modelo atômico de
+                        Rutherford - Bohr que é usado até hoje. </p>
+                    <p class="text-justify">Schrodinger foi um físico que criou a Equação de Schrodinger a qual usa-se
+                        para perceber as mudanças de estado quântico num sistema físico. Além disso criou a teoria “Gato
+                        de Schrödinger” onde um gato é colocado numa caixa com um pote de veneno junto e em tese ele
+                        estaria vivo e morto ao mesmo tempo.</p>
+                    <p class="text-justify">Heisenberg foi responsável pela criação do modelo quântico de um átomo. Ele
+                        também propôs o princípio da incerteza que designa o estado de um elétron, porém como é
+                        impossível saber a posição exata do mesmo, dá se o princípio da incerteza.</p>
+
+                    <div class="container d-flex justify-content-center">
+                        <img src="/public/img/fisica-moderna/atomos.png" alt="modelos de atomos">
+                    </div>
+                </div>
+                <div class="col-2"></div>
+            </div>
+
+            <hr>
+
+            <div class="row pt-3" id="nuclear">
+                <div class="col-2"></div>
+                <div class="col-8">
+                    <p class="display-4 text-center">Física Nuclear</p>
+                    <p class="text-center">Existem várias forças divididas em grupos na física, são estes:</p>
+                    <p class="text-justify">Força Gravitacional: É a força da atração, ela é responsável pela órbita dos
+                        planetas, por fazer as coisas caírem entre outras coisas.
+                        <br><br>Forças eletromagnéticas: São as forças que dão origem aos fenômenos elétricos, seja ela
+                        imã, correntes, entre outras.
+                        <br><br>Força Nuclear Fraca: São as forças que produzem o decaimento em que um elétron é emitido
+                        do núcleo.
+                        <br><br>Força Nuclear Forte: São as forças responsáveis por manter as partículas do núcleo
+                        juntas, até mesmo as que possuam cargas elétricas iguais.
+                    </p>
+
+                    <p class="display-4">1896</p>
+                    <p class="text-justify">Becquerel descobriu os “raios urânicos” após ver que sais urânicos mancham
+                        placas fotossintetizantes.</p>
+
+                    <p class="display-4">1897</p>
+                    <p class="text-justify">Rutherford a partir da descoberta de Becquerel Rutherford descobriu as
+                        radiações alfa e beta, de acordo com as cargas elétricas e ao seu poder de penetração na
+                        matéria.</p>
+
+                    <p class="display-4">1898</p>
+                    <p class="text-justify">Marie Curie e seu esposo, Pierre Curie, descobriram que os “raios urânicos”
+                        também são emitidos por outros elementos (tório) e propuseram o termo “radioatividade”.
+                        Descobriram e batizaram dois novos elementos radioativos: polônio e rádio.</p>
+
+                    <p class="display-4">1903</p>
+                    <p class="text-justify">Rutherford propôs a medição da idade geológica da Terra por meio da detecção
+                        de elemento s radioativos em seu interior. Além disso, sugeriu que a Terra é muito mais antiga
+                        do que se acreditava.</p>
+
+                    <p class="display-4">1906</p>
+                    <p class="text-justify">Rutherford descobriu que a radiação alfa é, na verdade, o núcleo de um átomo
+                        de hélio.</p>
+
+                    <p class="display-4">1909</p>
+                    <p class="text-justify">Os estudantes de graduação Eugene Mardsen e Hans Geiger descobrem a grande
+                        densidade do núcleo do átomo através do experimento da folha de ouro, onde uma fina película é
+                        bombardeada por partículas alfa e estas são refletidas.</p>
+
+                    <p class="display-4">1930</p>
+                    <p class="text-justify">Paul Dirac elaborou a equação de Dirac, prevendo, assim, a existência da
+                        antimatéria.</p>
+
+                    <p class="display-4">1931</p>
+                    <p class="text-justify">Físicos debateram possibilidades para a não conservação da energia durante
+                        os decaimentos beta. O físico italiano Enrico Fermi propôs que, nesse tipo de decaimento,
+                        ocorria a emissão de duas partículas neutras praticamente indetectáveis, as quais ele batizou de
+                        neutrinos.</p>
+
+                    <p class="display-4">1932</p>
+                    <p class="text-justify">Carl Anderson percebeu a existência dos pósitrons, que são partículas com
+                        carga elétrica oposta e massa igual a dos elétrons.</p>
+
+                    <p class="display-4">1935</p>
+                    <p class="text-justify">O físico Hideki Yukawa propôs que os prótons e nêutrons do núcleo dos átomos
+                        são ligados por uma força nuclear forte, muito mais potente que a própria repulsão elétrica.</p>
+
+                    <p class="display-4">1938</p>
+                    <p class="text-justify">Otto Hahn e Lise Meitner descobriram a fissão nuclear ao atingirem núcleos
+                        de urânio com nêutrons.</p>
+
+                    <p class="display-4">1942</p>
+                    <p class="text-justify">Enrico Fermi foi nomeado o principal cientista responsável pelo projeto
+                        Manhattan, intencionado em produzir a primeira reação nuclear em cadeia artificial.</p>
+
+                    <p class="display-4">1945</p>
+                    <p class="text-justify">Em 16 de julho de 1945 a primeira bomba nuclear foi detonada no Novo México.
+                    </p>
+
+                    <div class="container d-flex justify-content-center">
+                        <img src="/public/img/fisica-moderna/bomba-nuclear.jpg" alt="bomba nuclear" class="w-100">
+                    </div>
+                </div>
+                <div class="col-2"></div>
+            </div>
+
+        </div>
+    </div>
 
 
-    
-</script>
+    </script>
 </body>
+
 </html>

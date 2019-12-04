@@ -1,4 +1,5 @@
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -6,35 +7,246 @@
 
     <link rel="stylesheet" href="/public/css/bootstrap-4.0.0/dist/css/bootstrap.min.css">
     <link rel="stylesheet" href="/public/css/main.css">
+    <link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet">
     <title>Óptica</title>
 </head>
-<body>
-    <nav class="navbar navbar-lg navbar-expand-lg navbar-light bg-primary">
-        <a class="navbar-brand text-lg mr-5" href="#">Física Online</a>
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#conteudoNavbarSuportado" aria-controls="conteudoNavbarSuportado" aria-expanded="false" aria-label="Alterna navegação">
-            <span class="navbar-toggler-icon"></span>
-        </button>
 
-        <div class="collapse navbar-collapse" id="conteudoNavbarSuportado">
+<body>
+    <nav class="navbar navbar-lg navbar-expand-lg navbar-light fixed-top bg-blue">
+        <a class="navbar-brand text-lg mr-5" href="#">Física Online</a>
+        <div class="collapse navbar-collapse">
             <ul class="navbar-nav mr-auto">
-            <li class="nav-item active">
-                <a class="nav-link" href="menu.html">Home<span class="sr-only">(página atual)</span></a>
-            </li>
-            <li class="nav-item active">
-                <a class="nav-link" href="ondulatoria.html">Ondulatória</a>
-            </li>
-            <li class="nav-item active">
-                <a class="nav-link" href="optica.html">Óptica</a>
-            </li>
-            <li class="nav-item active">
-                <a class="nav-link" href="fisicaModerna.html">Física Moderna</a>
-            </li>            
+                <li class="nav-item active border-bottom mx-2 rounded-top">
+                    <a class="nav-link" href="menu.html">Home</a>
+                </li>
+                <li class="nav-item active border-bottom mx-2 rounded-top">
+                    <a class="nav-link" href="ondulatoria.html">Ondulatória</a>
+                </li>
+                <li class="nav-item active border-bottom mx-2 rounded-top">
+                    <a class="nav-link" href="optica.html">Óptica</a>
+                </li>
+                <li class="nav-item active border-bottom mx-2 rounded-top">
+                    <a class="nav-link" href="fisicaModerna.html">Física Moderna</a>
+                </li>
             </ul>
             <form class="form-inline my-2 my-lg-0">
-            <input class="form-control mr-sm-2" type="search" placeholder="Pesquisar" aria-label="Pesquisar">
-            <button class="btn btn-outline-light my-2 my-sm-0" type="submit">Pesquisar</button>
+                <input class="form-control mr-sm-2" type="search" placeholder="Pesquisar" aria-label="Pesquisar">
+                <button class="btn btn-outline-light my-2 my-sm-0" type="submit">Pesquisar</button>
             </form>
         </div>
     </nav>
+
+    <div class="py-5"></div>
+
+    <div class="d-flex justify-content-center">
+        <div class="my-3 bg-white px-5 pt-3" style="width: 80%;">
+            <div class="container-fluid bg-dark rounded">
+                <div class="container d-flex justify-content-center">
+                    <h1 class="display-2 text-light"><strong>Física Online</strong></h1>
+                </div>
+                <div class="container d-flex justify-content-center">
+                    <h1 class="display-4 text-light">Óptica</h1>
+                </div>
+            </div>
+
+            <div class="container my-2">
+                <nav class="navbar bg-transparent navbar-expand-lg">
+                    <ul class="navbar-nav mr-auto mx-auto text-center">
+                        <li class="nav-item active mx-2 rounded nav-menu">
+                            <a class="nav-link text-dark" href="#natureza">Natureza da Luz</a>
+                        </li>
+                        <li class="nav-item active mx-2 rounded nav-menu">
+                            <a class="nav-link text-dark" href="#fontes">Fontes de Luz</a>
+                        </li>
+                        <li class="nav-item active mx-2 rounded nav-menu">
+                            <a class="nav-link text-dark" href="#optico">Meios Ópticos</a>
+                        </li>
+                        <li class="nav-item active mx-2 rounded nav-menu">
+                            <a class="nav-link text-dark" href="#reflexao">Reflexão</a>
+                        </li>
+                        <li class="nav-item active mx-2 rounded nav-menu">
+                            <a class="nav-link text-dark" href="#refracao">Refração</a>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+
+            <div class="row pt-3">
+                <div class="col-2"></div>
+                <div class="col-8">
+                    <p class="display-4 text-center">Introdução</p>
+                    <p class="text-justify">A Óptica é a subárea da Física que procura estudar e compreender a luz assim
+                        como todos os fenômenos relacionados a ela. </p>
+                </div>
+                <div class="col-2"></div>
+            </div>
+
+            <hr>
+
+            <div class="row pt-3" id="natureza">
+                <div class="col-2"></div>
+                <div class="col-8">
+                    <p class="display-4 text-center">Natureza da Luz</p>
+                    <p class="text-justify">O Físico James Maxwell determinou, em 1873, a natureza não só da luz, mas
+                        também da eletricidade e do magnetismo. A quarta equação de Maxwell diz que uma carga elétrica
+                        vibrando produz um campo magnético ao seu redor. Tal campo magnético é variável e induz um campo
+                        elétrico também variável, e esta repetição é que produz as ondas eletromagnéticas, incluindo a
+                        luz.</p>
+                    <p class="text-justify">Sabendo da natureza da luz, é preciso separar a óptica em 2 campos. A Óptica
+                        Geométrica não se preocupa com a natureza da luz, portanto estuda conceitos como a propagação
+                        retilínea da luz, a reflexão e espelhos, a refração e lentes, etc. Já a Óptica Física estuda o
+                        comportamento ondulatório da luz com base em sua natureza, incluindo fenômenos como emissão,
+                        composição, absorção, polarização, interferência e difração da luz.</p>
+                </div>
+                <div class="col-2"></div>
+            </div>
+
+            <hr>
+
+            <div class="row pt-3" id="fontes">
+                <div class="col-2"></div>
+                <div class="col-8">
+                    <p class="display-4 text-center">Fontes de Luz</p>
+                    <p class="text-justify">Os objetos localizados no espaço podem ser corpos luminosos ou iluminados.
+                        Os corpos luminosos são considerados fontes primárias por emitirem luz própria. Exemplos de
+                        corpos luminosos são estrelas, como o sol, e lâmpadas elétricas.</p>
+                    <p class="text-justify">Corpos iluminados atuam como fontes secundárias por apenas refletirem a luz
+                        proveniente de alguma fonte primária. Exemplos de corpos iluminados são a Lua, que reflete a luz
+                        do Sol, e as paredes de uma casa que refletem para o ambiente a luz das lâmpadas.</p>
+                    <p class="text-justify">Ainda em relação as fontes de luz, estas podem ser caracterizadas em relação
+                        a dimensão de sua luz. Fontes de luz puntiformes possuem dimensão de luz desprezível em relação
+                        a distância do objeto. Ou seja, para o objeto esta luz age como um ponto.</p>
+                    <p class="text-justify">Fontes de luz extensas agem numa área, com sua dimensão de luz sendo
+                        considerável em relação a distância do objeto iluminado.</p>
+                </div>
+                <div class="col-2"></div>
+            </div>
+
+            <hr>
+
+            <div class="row pt-3" id="optico">
+                <div class="col-2"></div>
+                <div class="col-8">
+                    <p class="display-4 text-center">Meios Ópticos</p>
+                    <p class="text-justify">Meios ópticos são os ambientes ao qual a luz pode se propagar, sendo
+                        caracterizados pela intensidade ao qual a luz consegue propagar-se no mesmo. </p>
+                </div>
+                <div class="col-2"></div>
+            </div>
+
+            <div class="row pt-3">
+                <div class="col-4">
+                    <p class="display-4 text-center">Meios Opacos</p>
+                    <p class="text-justify">Meios Opacos praticamente não permitem que a luz se propague neles. A
+                        maioria dos objetos sólidos são opacos, como madeiras e metais.</p>
+                </div>
+                <div class="col-4">
+                    <p class="display-4 text-center">Meios Translúcidos</p>
+                    <p class="text-justify">Meios Translúcidos permitem que a luz se propague neles, porém percorrendo
+                        caminhos imprevisíveis devido aos desvios ocorridos no interior do meio. Os vidros translúcidos
+                        são meios que “controlam” a passagem de luz, criando efeitos diversos de acordo com sua
+                        estrutura de desvio da luz.</p>
+                </div>
+                <div class="col-4">
+                    <p class="display-4 text-center">Meios Transparentes</p>
+                    <p class="text-justify">Meios Transparentes permitem a passagem livre de luz, sem desvios. Vidros
+                        transparentes são o maior exemplo.</p>
+                </div>
+            </div>
+
+            <div class="row pt-3">
+                <div class="col-2"></div>
+                <div class="col-8">
+                    <p class="text-justify">Além disso, a espessura do meio também pode influenciar na passagem da luz.
+                        A água, se for rasa, será considerada transparente. Já águas profundas são consideradas opacas.
+                    </p>
+                </div>
+                <div class="col-2"></div>
+            </div>
+
+            <hr>
+
+            <div class="row pt-3" id="reflexao">
+                <div class="col-2"></div>
+                <div class="col-8">
+                    <p class="display-4 text-center">Reflexão</p>
+                    <p class="text-center">Quando um feixe de luz incide sobre uma superfície e volta ao meio de origem.
+                    </p>
+                    <div class="container d-flex justify-content-center">
+                        <img src="/public/img/optica/raio-reflexao.jpg" alt="reflexao de um raio">
+                    </div>
+
+                    <p class="display-4 text-center">Leis da Reflexão</p>
+                    <p class="text-justify">1. O plano de reflexão, o raio incidente, o raio refletido e a normal estão
+                        na mesma superfície (coexistem no mesmo plano).</p>
+                    <p class="text-justify">2. Raio incidente e raio refletido possuem o mesmo ângulo.</p>
+
+                    <div class="container d-flex justify-content-center">
+                        <img src="/public/img/optica/leis-reflexao.jpg" alt="leis reflexao">
+                    </div>
+                </div>
+                <div class="col-2"></div>
+            </div>
+
+            <div class="row pt-3">
+                <div class="col-6">
+                    <p class="display-4 text-center">Espelhos</p>
+                    <p class="text-justify">Os espelhos utilizam a reflexão para formar imagens, estas possuem diversas
+                        classificações de acordo com a distância do objeto real para o espelho e do tipo de espelho.</p>
+                    <div class="container d-flex justify-content-center">
+                        <img src="/public/img/optica/espelhos.jpg" alt="espelhos">
+                    </div>
+                </div>
+                <div class="col-6">
+                    <p class="display-4 text-center">Associação de Espelhos</p>
+                    <p class="text-justify">Isto ocorre quando há a combinação de espelhos, quando um é colocado perto
+                        do outro, podendo colocar em diversos ângulos. O que acontece quando se faz isso e a
+                        multiplicação de imagens do objeto que está entre os espelhos, o número de imagens muda de
+                        acordo com o ângulo em que os espelhos são colocados em relação ao outro.</p>
+
+                    <div class="container d-flex justify-content-center">
+                        <img src="/public/img/optica/associacao-espelhos.jpg" alt="associacao de espelhos">
+                    </div>
+                </div>
+            </div>
+
+            <hr>
+
+            <div class="row pt-3">
+                <div class="col-8">
+                    <p class="display-4 text-center" id="refracao">Refração</p>
+                    <p class="text-justify">É quando um raio incide em um meio e o ultrapassa, a refração e a reflexão
+                        podem ocorrer simultaneamente.</p>
+                    <p class="text-justify">Quanto maior o índice de refringência maior será a densidade e com menor
+                        velocidade o raio se locomoverá neste meio.
+                        Quando o n2 > n1 (índice de refração meio um = n1; índice de refração do meio dois = n2):
+                        sen(Oi) > sen (Orr)</p>
+                    <p class="text-justify">Quando o n1 > n2 (índice de refração meio um = n1; índice de refração do
+                        meio dois = n2): sen(Oi) < sen(Orr).</p> 
+                </div>
+                <div class="col-4">
+                    <div class="container d-flex justify-content-center">
+                        <img src="/public/img/optica/refracao.png" alt="refracao">
+                    </div>     
+                </div>
+            </div>
+
+            <div class="row pt-3">
+                <div class="col-2"></div>
+                <div class="col-8">
+                    <p class="display-4 text-center">Lei de Snell</p>
+                    <p class="text-center">Utilizada para determinar o ângulo do raio incidente ou do refratado.</p>
+                    <div class="container d-flex justify-content-center">
+                        <img src="/public/img/optica/snell.png" alt="lei de snell">
+                    </div>
+                </div>
+                <div class="col-2"></div>
+            </div>
+        </div>
+
+    </div>
+    
+
 </body>
+
 </html>
